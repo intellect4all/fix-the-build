@@ -1,0 +1,94 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildSchedule > is stable across releases (snapshot) 1`] = `
+[
+  {
+    "armored": false,
+    "edge": "right",
+    "heading": -0.21501255281036719,
+    "kind": "bug",
+    "pos": 0.42496274085715413,
+    "speed": 1.0215761644300074,
+    "swarm": false,
+    "t": 0.35,
+  },
+  {
+    "armored": false,
+    "edge": "left",
+    "heading": -0.5016304042772389,
+    "kind": "feature",
+    "pos": 0.9394729286432266,
+    "speed": 1.0175621194764972,
+    "swarm": false,
+    "t": 1.1729931847052875,
+  },
+  {
+    "armored": false,
+    "edge": "left",
+    "heading": -0.4065103626111522,
+    "kind": "bug",
+    "pos": 0.8406183009501547,
+    "speed": 0.9737893348326906,
+    "swarm": false,
+    "t": 1.9648908763036923,
+  },
+  {
+    "armored": false,
+    "edge": "right",
+    "heading": -0.2754203662276268,
+    "kind": "bug",
+    "pos": 0.36989736766554415,
+    "speed": 0.9568477190565318,
+    "swarm": false,
+    "t": 2.786439195690961,
+  },
+  {
+    "armored": false,
+    "edge": "left",
+    "heading": 0.19004488232312722,
+    "kind": "bug",
+    "pos": 0.6112154417205602,
+    "speed": 0.8742065317928791,
+    "swarm": false,
+    "t": 3.381296087484282,
+  },
+  {
+    "armored": false,
+    "edge": "top",
+    "heading": 0.38132188534364103,
+    "kind": "bug",
+    "pos": 0.45380526524968445,
+    "speed": 1.050636857515201,
+    "swarm": false,
+    "t": 4.337160540791307,
+  },
+  {
+    "armored": false,
+    "edge": "right",
+    "heading": 0.5011044722632505,
+    "kind": "feature",
+    "pos": 0.739394094562158,
+    "speed": 1.085818261327222,
+    "swarm": false,
+    "t": 4.896597508382678,
+  },
+  {
+    "armored": false,
+    "edge": "right",
+    "heading": -0.25650785642210394,
+    "kind": "bug",
+    "pos": 0.5373571990057826,
+    "speed": 0.9469909057486802,
+    "swarm": false,
+    "t": 5.585352908786265,
+  },
+]
+`;
+
+exports[`mulberry32 > is deterministic and matches known values (Go port must match these) 1`] = `
+[
+  2581720956,
+  1925393290,
+  3661312704,
+]
+`;
