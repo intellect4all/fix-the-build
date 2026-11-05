@@ -1,0 +1,23 @@
+{
+  "name": "fix-the-build",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "phone": "npm run build && vite preview --host",
+    "test": "vitest run",
+    "sim": "tsx scripts/sim.ts",
+    "size": "npm run build && node scripts/size.mjs",
+    "fixture": "tsx scripts/fixture.ts",
+    "serve": "npm run build && go run ./cmd/server"
+  },
+  "devDependencies": {
+    "qrcode-generator": "^1.4.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.5",
+    "vitest": "^3.2.7"
+  }
+}

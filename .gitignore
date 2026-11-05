@@ -1,0 +1,14 @@
+node_modules/
+web/dist/
+*.db
+*.db-wal
+*.db-shm
+/bin/
+/backups/
+.env.local
+deploy/.env
+deploy/rclone.conf
+.remember/
+.claude/
+.DS_Store
+*.log
