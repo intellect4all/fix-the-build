@@ -1,0 +1,24 @@
+.wrap.adm { max-width: 1200px; }
+.adm h1 { font-size: 22px; margin: 18px 0 4px; }
+.adm .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0; }
+.adm .bar input[type=search] { flex: 1; min-width: 180px; }
+.adm input, .adm button { font: 14px var(--sans); padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+.adm button { background: var(--bg2); cursor: pointer; }
+.adm button.primary { background: #1f883d; color: #fff; border-color: transparent; }
+.adm button.danger { color: #cf222e; }
+.adm a.btn { padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line); text-decoration: none; font-size: 14px; }
+.adm .totals { display: flex; gap: 18px; flex-wrap: wrap; color: var(--dim); font-size: 14px; }
+.adm .totals b { color: var(--fg); }
+.adm .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
+.adm table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.adm th, .adm td { text-align: left; padding: 8px 10px; border-top: 1px solid var(--line); vertical-align: top; }
+.adm th { border-top: 0; background: var(--bg2); color: var(--dim); font-weight: 600; white-space: nowrap; }
+.adm tr.hidden td { opacity: .5; }
+.adm td.num { text-align: right; font-family: var(--mono); }
+.adm td.msg { font-family: var(--mono); min-width: 200px; max-width: 360px; word-break: break-word; }
+.adm td.acts { white-space: nowrap; }
+.adm td.acts button { padding: 4px 8px; font-size: 12px; }
+.adm .flag { color: #cf222e; font-weight: 700; }
+.adm .login { max-width: 360px; margin: 18vh auto; display: grid; gap: 10px; }
+.adm h2 { font-size: 16px; margin: 28px 0 8px; }
+.adm .note { font-size: 13px; color: var(--dim); }

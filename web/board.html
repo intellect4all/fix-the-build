@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="robots" content="noindex" />
+  <title>Commit history · live board</title>
+</head>
+<body>
+  <div id="board" class="board">
+    <main class="b-main">
+      <header class="b-head">
+        <div class="b-repo"><span class="mark">◆</span> <b data-owner>…</b> / network · <span class="dim">Pull Request #1</span></div>
+        <h1>Commits on <code data-branch>main</code></h1>
+      </header>
+      <ol class="b-rows" data-rows></ol>
+      <p class="b-empty dim" data-empty hidden>No commits yet. Scan the code and fix the build.</p>
+    </main>
+    <aside class="b-side">
+      <div class="b-qr" data-qr></div>
+      <p class="b-scan">Scan to fix the build</p>
+      <p class="b-url" data-url></p>
+      <div class="b-totals">
+        <div><b data-players>0</b><span>players</span></div>
+        <div><b data-pushes>0</b><span>pushes</span></div>
+      </div>
+      <ul class="b-hl" data-hl></ul>
+    </aside>
+  </div>
+  <script type="module" src="/src/board.ts"></script>
+</body>
+</html>
