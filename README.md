@@ -78,10 +78,4 @@ go run ./cmd/loadtest -url https://your-domain -players 300 -games 5 -ramp 30m
 
 The simulated players behave like the real page: they poll the leaderboard, play valid rounds, and merge after their first game. It fails if any endpoint's p95 goes over 200 ms. On a small VPS, 300 players doing 5 games each peaked around 27 ms.
 
-## On the day
-
-Before the event, play a round on two phones and watch both show up on `/board`. Also scan the shirt QR from a couple of metres away. During the workshop, `/board` stays full-screen on the laptop. If someone writes something they shouldn't, `/admin` can edit or hide their commit. If someone switches phones, they play once on the new one and read you the device code from the error, and **Link phone** in admin moves them over. Afterwards, export the CSV. The privacy page promises deletion 60 days after the event, so run `down -v` then, and clear any off-site copies.
-
-## Built with Claude
-
-I built this with [Claude Code](https://claude.com/claude-code): I came up with the idea, the rules and the look, and Claude wrote most of the code with me over a day of back-and-forth and phone testing.
+Built with Claude.
