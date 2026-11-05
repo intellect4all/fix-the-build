@@ -1,0 +1,27 @@
+# For a box that already runs a reverse proxy on 80/443 (e.g. a host Caddy serving other sites).
+# App only, bound to loopback; add a site block for it to the existing proxy (see README "Shared host").
+#   docker compose -p ftb -f deploy/docker-compose.shared.yml up -d
+# The image is built elsewhere (`docker build -f deploy/Dockerfile -t ftb-app:latest .`) and loaded,
+# or add `build:` back to build it here.
+services:
+  app:
+    image: ${APP_IMAGE:-ftb-app:latest}
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      ADDR: ":8080"
+      DB_PATH: /data/game.db
+      BACKUP_DIR: /backups
+      TRUST_PROXY: "1"          # the host proxy sets X-Forwarded-For
+    ports:
+      - "127.0.0.1:${APP_PORT:-38180}:8080"
+    volumes:
+      - data:/data
+      - backups:/backups
+    stop_grace_period: 20s
+    mem_limit: 256m
+    cpus: 1.0
+
+volumes:
+  data:
+  backups:

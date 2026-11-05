@@ -1,0 +1,12 @@
+# Automatic HTTPS for DOMAIN (set in deploy/.env). No `log` directive on
+# purpose: Caddy then writes no access log, so client IPs aren't stored.
+{$DOMAIN} {
+	encode zstd gzip
+	reverse_proxy app:8080
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		-Server
+	}
+}
+
+# Caddy redirects http:// → https:// for DOMAIN on its own.
